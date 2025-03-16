@@ -23,8 +23,8 @@ Our **MediTrack** is designed to help patients find nearby hospitals with availa
 | Name        | Role                  | Contributions |
 |------------|----------------------|--------------|
 | **Hritesh Saha** | Backend Developer | Developed API, Structured MongoDB schema and optimized database queries and handled hospital data storage. |
-| **Praneet Singh** | Frontend Developer | Designed UI, implemented hospital listings, and emergency request form. |
-| **Kaustuv Chatterjee** | Frontend Developer | Designed and structured the About and Contact pages for a seamless user experience. |
+| **Kaustuv Chatterjee** | Frontend Developer | Designed UI, implemented hospital listings, and emergency request form. |
+| **Praneet Singh** | Frontend Developer | Designed and structured the About, Contact, Home, Login and Signup pages for a seamless user experience. |
 | **Meghamitra Banerjee** | UI/UX Designer | Architected an intuitive and visually appealing user interface, ensuring a seamless and pleasant user experience. |
 
 ## 📌 Installation & Setup
