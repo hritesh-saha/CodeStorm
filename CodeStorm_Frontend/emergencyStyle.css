@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#emergency-header {
+    text-align: center;
+    background-color: #f3f3f3;
+    padding: 40px 20px;
+    margin-bottom: 40px;
+}
+
+#emergency-header h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.emergency-buttons button {
+    padding: 10px 20px;
+}
+
+#emergency-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+#request-form {
+    width: 60%;
+}
+
+#request-form input, #request-form textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+#form-info {
+    width: 35%;
+    margin: 40px;
+}
+
+#form-info h4 {
+    margin-bottom: 10px;
+}
+
+#nearby-hospitals {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#map img {
+    width: 100%;
+}
+
+
+#blood-organ-request {
+    text-align: center;
+    margin: 40px;
+}
+
+#req-blood-btn{
+    margin-top: 20px;
+}
+
+.normal{
+    width: 40%;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.normal:hover{
+    cursor: pointer;
+    background-color: #088178;
+}
+
+.mapouter{
+    position: relative;
+    text-align: right;
+    height: 560px;
+    width: 820px;
+}
+
+.gmap_canvas{
+    overflow: hidden;
+    background: none !important;
+    height: 560px;
+    width: 820px;
+}
+
+#request-form {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Labels */
+#request-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Inputs and Select */
+#request-form input, 
+#request-form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Checkbox Styling */
+#ambulanceRequested {
+    width: 18px;
+    height: 18px;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+/* Submit Button */
+#request-form button {
+    background-color: #0fb1b1;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+    display: block;
+    margin-top: 10px;
+    
+    margin-right: 40px;
+
+}
+
+/* Hover Effect */
+#request-form button:hover {
+    background-color: #088178;
+    transform: scale(1.05);
+}
+
+/* Active Click Effect */
+#request-form button:active {
+    background-color: #066060;
+    transform: scale(0.98);
+}
+/* Responsive Design */
+@media (max-width: 500px) {
+    #request-form {
+        width: 90%;
+    }
+}

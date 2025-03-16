@@ -1,0 +1,272 @@
+/*General styles*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+    text-decoration: none;
+}
+
+h1 {
+    font-size:50px;
+    line-height: 64px;
+    color: black;
+
+}
+h2 {
+    font-size:46px;
+    line-height: 54px;
+    color: black;
+}
+h4 {
+    font-size:20px;
+    color: black;
+}
+h6 {
+    font-size:16px;
+    font-weight: 500; 
+}
+p {
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+.section-p1 {
+    padding: 40px 80px;
+}
+
+
+.section-m1 {
+    margin: 40px 0;
+}
+button.normal{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #000;
+    background-color: white;
+    border-radius: 4px;
+    cursor:pointer;
+    border:none;
+    outline: none;
+    transition: 0.2s;
+}
+button.white{
+    font-size: 13px;
+    font-weight: 600;
+    padding: 11px 18px;
+    color: white;
+    background-color: transparent;
+    cursor:pointer;
+    border: 1px solid white;
+    outline: none;
+    transition: 0.2s;
+}
+body {
+    width: 100%;
+
+}
+
+#about-meditrack {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #bed3d3; /* Darker background for the hero section */
+}
+
+#about-meditrack h1 {
+    color: black; /* Light blue color for the main heading */
+    margin-bottom: 20px;
+    font-size: 50px;
+    color: #088178;
+}
+#about-meditrack h2 {
+    padding-bottom: 15px;
+    font-size:30px;
+    color: black; /* White color for subheadings */
+}
+
+#about-meditrack h4 {
+    padding-bottom: 15px;
+    color: black; /* White color for subheadings */
+}
+
+#about-meditrack button {
+    background-image: url("images/button.png");
+    background-color: transparent;
+    color: black; /* Light blue color for button text */
+    border: 0;
+    padding: 14px 80px 14px 65px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+    margin-top: 20px; /* Space above the button */
+}
+
+/* Additional styles for the about content */
+.about-content {
+    max-width: 800px;
+    margin: 0 auto; /* Center the content */
+    padding: 20px;
+    color: black; /* White text for readability */
+    text-align: left; /* Align text to the left */
+}
+
+.about-content h2 {
+    color: black; /* Light blue color for section heading */
+    margin-bottom: 15px;
+}
+
+.about-content p {
+    line-height: 1.6; /* Improve readability */
+    margin-bottom: 15px;
+}
+
+/*Hospital listings */
+/* Hospital Listings Styles (Consistent with paste.txt theme) */
+
+#hospital-listings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 80px; /* Use existing section padding */
+}
+
+#hospital-listings h2 {
+    font-size: 46px;  /* Use existing h2 style */
+    line-height: 54px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+#hospital-filter {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+    align-items: stretch; /* Ensure elements stretch to fill width */
+}
+
+#search-bar,
+#pincode-filter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#search-form {
+    display: flex;
+    align-items: center;
+}
+
+#search-input {
+    padding: 10px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    width: 200px;
+    font-family: 'Spartan', sans-serif; /* Inherit font */
+    font-size: 16px;   /* Match other text */
+}
+
+#search-form button[type="submit"] {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    background-color: #088178;
+    color: white;
+    cursor: pointer;
+    font-size: 14px; /* Match normal buttons */
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+#search-form button[type="submit"]:hover {
+    background-color: #06635c;  /* Darken on hover */
+}
+
+#pincode-filter label {
+    margin-right: 10px;
+    font-size: 16px;
+    color: #465b52; /* Match existing paragraph color */
+}
+
+#pincode-filter input[type="text"] {
+    padding: 10px;
+    border: 1px solid #cce7d0;
+    border-radius: 4px;
+    width: 120px;
+    font-family: 'Spartan', sans-serif; /* Inherit font */
+    font-size: 16px;   /* Match other text */
+}
+
+#pincode-filter button {
+    background-color: #088178;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px; /* Match normal buttons */
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+#pincode-filter button:hover {
+    background-color: #06635c;  /* Darken on hover */
+}
+
+.hospital-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%; /* Take up full width */
+}
+
+.hospital-card {
+    width: 23%; /*Adjust the percentage such that there are 4 cards */
+    min-width: 250px;
+    margin: 15px;
+    padding: 20px;
+    border: 1px solid #cce7d0;
+    border-radius: 4px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03); /* Match feature box shadow */
+    transition: 0.2s ease;
+}
+
+.hospital-card:hover {
+    box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.01); /* Match feature box hover shadow */
+}
+
+.hospital-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 4px 4px 0 0;
+    margin-bottom: 10px;
+}
+
+.hospital-card h6 {
+    font-size: 16px;   /* Existing h6 style */
+    font-weight: 500;  /* Existing h6 style */
+    margin-bottom: 5px;
+}
+
+.hospital-card p {
+    font-size: 16px;   /* Existing p style */
+    color: #465b52;  /* Existing p color */
+    margin: 5px 0;
+}
+
+.hospital-card button {
+    font-size: 14px; /* Match normal buttons */
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #000; /*Existing normal button text */
+    background-color: white; /* Exisitng normal button BG */
+    border-radius: 4px; /*Existing normal button radius */
+    cursor:pointer;
+    border:none;
+    outline: none;
+    transition: 0.2s;
+}

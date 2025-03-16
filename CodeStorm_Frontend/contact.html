@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Meditrack</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="navbar.css">
+    <style>
+        #contact-meditrack {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #bed3d3; /* Darker background for the hero section */
+        }
+
+        #contact-meditrack h1 {
+            color: black; /* Light blue color for the main heading */
+            margin-bottom: 20px;
+            font-size: 50px;
+            color: #088178;
+        }
+        #contact-meditrack h2 {
+            padding-bottom: 15px;
+            font-size:30px;
+            color: black; /* White color for subheadings */
+        }
+
+        #contact-meditrack h4 {
+            padding-bottom: 15px;
+            color: black; /* White color for subheadings */
+        }
+
+        #contact-meditrack button {
+            background-image: url("images/button.png");
+            background-color: transparent;
+            color: black; /* Light blue color for button text */
+            border: 0;
+            padding: 14px 80px 14px 65px;
+            background-repeat: no-repeat;
+            cursor: pointer;
+            font-weight: 700;
+            font-size: 15px;
+            margin-top: 20px; /* Space above the button */
+        }
+
+        /* Additional styles for the about content */
+        .contact-content {
+            max-width: 800px;
+            margin: 0 auto; /* Center the content */
+            padding: 20px;
+            color: black; /* White text for readability */
+            text-align: left; /* Align text to the left */
+        }
+
+        .contact-content h2 {
+            color: black; /* Light blue color for section heading */
+            margin-bottom: 15px;
+        }
+
+        .contact-content p {
+            line-height: 1.6; /* Improve readability */
+            margin-bottom: 15px;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Spartan', sans-serif;
+            text-decoration: none;
+        }
+
+        .navbar{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #088178; 
+            padding-right: 16px;
+            padding-left: 16px;
+            height: 120px;
+        }
+        .navdiv{
+            display: flex; 
+            align-items: center; 
+            justify-content: space-between;
+        }
+        .logo a{
+            font-size: 35px; 
+            font-weight: 600; 
+            color: #ffffff;
+            margin-right: 25px;
+        }
+
+        li{
+            list-style: none; 
+            display: inline-block;
+        }
+        li a{
+            color: #ffffff; 
+            font-size: 18px; 
+            font-weight: bold; 
+            margin-right: 25px;
+        }
+        button{
+            border: 1px solid #465b52;
+            background-color: #465b52; 
+            margin-left: 12px; 
+            border-radius: 40px; 
+            padding: 12px; 
+            width: 92px;
+        }
+        button a{
+            color: white; font-weight: bold; font-size: 15px;
+        }
+        .contact-form {
+            background-color: #cbcbcb; /* Slightly lighter background for the form */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .contact-form .input-group {
+            margin-bottom: 15px;
+        }
+
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form textarea {
+            width: 100%; /* Full width of the container */
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: #fff; /* White background for inputs */
+        }
+
+        .contact-form button {
+            width: 100%; /* Full width of the container */
+            padding: 10px;
+            background-color: #0fb1b1; /* Button color */
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            
+        }
+
+        .contact-form button:hover {
+            background-color: #088178; /* Button hover color */
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+		<div class="navdiv">
+			<div class="logo">
+				<a href="../index.html">MediTrack</a>
+			</div>
+			<ul>
+				<li><a href="./index.html">Home</a></li>
+				<li><a href="./about.html">About</a></li>
+				<li><a href="./contact.html">Contact</a></li>
+                <li><a href="./hospital_Listings.html">Hospitals Listings</a></li>
+                <li><a href="./emergency.html">Emergency</a></li>
+				<button><a href="./login.html">Login</a></button>
+				<button><a href="./signup.html">SignUp</a></button>
+			</ul>
+		</div>
+	</nav>
+    <section id="contact-meditrack">
+        <h1>Contact Us - MediTrack</h1>
+        <h4>We'd Love to Hear From You!</h4>
+        <h4>Reach Out for Any Queries or Support</h4>
+        
+    </section>
+
+    <div class="contact-content">
+        <h2>Get in Touch</h2>
+        <div class="contact-form">
+            <form action="#" method="post">
+                <div class="input-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="input-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="input-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+            <p class="message">We will get back to you as soon as possible!</p>
+        </div>
+        <h2>Our Mission</h2>
+        <p>Our mission is to enhance the healthcare experience by providing timely information and resources. We aim to empower patients with the knowledge they need to make informed decisions about their healthcare.</p>
+
+        <h2>Contact Us</h2>
+        <p>If you have any questions or need assistance, feel free to reach out to us through our contact page.</p>
+    </div>
+
+    <footer class="section-p1">
+        <div class="col">
+            <h4>Contact</h4>
+            <p><strong>Address: </strong>Uniworld City, Downtown Mall, Kolkata - 700160</p>
+            <p><strong>Phone: </strong>+91 8697136321</p>
+            <p><strong>Hours: </strong>24/7, All Days</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About us</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms and Conditions</a>
+            <a href="#">Contact us</a>
+        </div>
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">Hospital Listings</a>
+            <a href="#">Call for emergency</a>
+            <a href="#">Help</a>
+        </div>
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="../images/app.jpg" alt="">
+                <img src="../images/play.jpg" alt="">
+            </div>
+            
+        </div>
+    </footer>
+</body>
+</html>
